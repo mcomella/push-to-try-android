@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+import argparse
+import json
+import urllib2
+
+CONFIG_URL = 'https://raw.githubusercontent.com/mcomella/push-to-try-android/master/config.json'
+
+def main():
+    args = set_and_parse_args()
+    syntax = get_syntax_from_server()
+    if args.dry_run:
+        print syntax
+    else:
+        pass # TODO: call out to subprocess
+
+def get_syntax_from_server():
+    obj = json.load(urllib2.urlopen(CONFIG_URL))
+    print obj
+    return 'syntax'
+
+def set_and_parse_args():
+    p = argparse.ArgumentParser(description='TODO')
+    p.add_argument('-d', '--dry-run', help='print try syntax; don\'t upload',
+             action='store_true')
+    return p.parse_args()
+
+if __name__ == '__main__':
+    main()
