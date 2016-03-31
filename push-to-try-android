@@ -4,6 +4,10 @@ import json
 import subprocess
 import urllib2
 
+DESC = """
+Push to try, running all of the android tests on try - no more remembering try
+syntax! The latest configuration is pulled from a server. Requries the push-to-try extension to be enabled.
+"""
 CONFIG_URL = ('https://raw.githubusercontent.com/mcomella/'
               'push-to-try-android/master/config.json')
 
@@ -32,7 +36,7 @@ def get_syntax_from_server():
 
 
 def set_and_parse_args():
-    p = argparse.ArgumentParser(description='TODO')
+    p = argparse.ArgumentParser(description=DESC)
     p.add_argument('-d', '--dry-run', help='print try syntax; don\'t upload',
                    action='store_true')
     return p.parse_args()
