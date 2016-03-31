@@ -1,0 +1,13 @@
+{
+    "builds": ["o", "d"],
+
+    "platforms": ["android-api-15",
+                  "android-x86",
+                  "android-api-15-frontend",
+                  "android-api-15-gradle-dependencies",
+                  "android-lint"],
+
+    "unit_suites": ["robocop"],
+
+    "talos_suites": ["none"]
+}
