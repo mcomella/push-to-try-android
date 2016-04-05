@@ -1,3 +1,5 @@
+!https://travis-ci.org/mcomella/push-to-try-android.svg?branch=master!:https://travis-ci.org/mcomella/push-to-try-android
+
 # push-to-try-android
 Forget try syntax! Push to try, running all of the android tests, with
 a single command.
