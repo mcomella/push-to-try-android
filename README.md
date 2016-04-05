@@ -26,6 +26,11 @@ copy to the clipboard with:
 
     push-to-try-android --dry-run | pbcopy
 
+## Test
+Run:
+
+    ./test.sh
+
 ## Missing a job?
 The command pulls the [latest online version][conf] of the `config.json`
 file. Is it missing a job? Pull requests welcome!
