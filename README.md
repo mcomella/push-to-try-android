@@ -1,3 +1,5 @@
+!https://travis-ci.org/mcomella/push-to-try-android.svg?branch=master!:https://travis-ci.org/mcomella/push-to-try-android
+
 # push-to-try-android
 Forget try syntax! Push to try, running all of the android tests, with
 a single command.
@@ -25,6 +27,11 @@ or copy the syntax to put it into mozreview. On OS X, you can easily
 copy to the clipboard with:
 
     push-to-try-android --dry-run | pbcopy
+
+## Test
+Run:
+
+    ./test.sh
 
 ## Missing a job?
 The command pulls the [latest online version][conf] of the `config.json`
