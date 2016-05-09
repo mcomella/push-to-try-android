@@ -3,7 +3,7 @@
 
     "platforms": ["android-api-15",
                   "android-x86",
-                  "android-api-15-frontend",
+                  "android-test",
                   "android-lint"],
 
     "unit_suites": ["robocop"],
